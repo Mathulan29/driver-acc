@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approving ride</title>
+
+    <style>
+        *{
+            margin:0px;
+        }
+        .container
+        {
+            width:100%;
+            background:white;
+        }
+        .header{
+            width:100%;
+            background:rgb(106, 188, 232);
+        }
+        #head
+        {
+            color:rgb(21, 7, 7);
+            font-family:arial;
+            font-size:36px;
+            margin-left:41%;
+           
+        }
+        #head2
+        {
+            color:white;
+            font-family:arial;
+            font-size:30px;
+            float:right;
+            margin-right:15px;
+           
+        }
+        th
+        {
+            background:rgb(37, 37, 89);
+            color:white;
+        }
+        td
+        {
+            text-align: center;
+            background:white;
+        }
+        td p:hover
+        {
+            cursor: pointer;
+        }
+        #homepage
+        {
+            width:100px;
+            padding:4px;
+            color:black;
+            background:none;
+            border-radius:10px;
+            float:right;
+            margin-right:15px;
+            margin-top:10px;
+
+        }
+        
+        #submit
+        {
+            width:100px;
+            padding:4px;
+            color:black;
+            background:rgb(68, 174, 223);
+            border-radius:10px;
+            margin-right:15px;
+            margin-top:10px;
+            
+        }
+        #echofare{
+            background:white;
+            width:100px;
+            border:1px solid black;
+            padding:5px;
+        }
+           
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <input  id="homepage" type="button" value="Homepage" onclick="location.href = 'index.jsp';">
+            <br><br>
+            
+            <p id="head">BOOKING RIDE</p>
+            <p id="head2">Welcome ${name}</p>
+            <br><br><br>
+            
+        </div>
+    <table style="width: 100%;">
+        <tr>
+         <th>Ride Id</th>
+         <th>Source</th>
+         <th>Destination</th>
+         <th>Date</th>
+         <th>Time</th>
+         <th>Car Type</th>
+         <th>Status</th>
+        </tr>
+        
+     </table>
+</body>
+
+</html>
